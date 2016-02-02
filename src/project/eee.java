@@ -13,7 +13,7 @@ public class eee {
 				board[row][column] = -1;
 			}
 		}
-		
+
 		Scanner input = new Scanner(System.in);
 		int[] shoot = new int[2];
 		int destroyedShips = 0;
@@ -31,11 +31,9 @@ public class eee {
 					} while ((ships[ship][0] == ships[last][0])
 							&& (ships[ship][1] == ships[last][1]));
 			}
-
 		}
-		
+
 		do {
-			
 			for (int row = 0; row < 5; row++) {
 				System.out.print((row + 1) + "");
 				for (int column = 0; column < 5; column++) {
@@ -45,7 +43,7 @@ public class eee {
 				}
 				System.out.println();
 			}
-			
+
 			System.out.print("Row: ");
 			shoot[0] = input.nextInt();
 			shoot[0]--;
@@ -61,7 +59,6 @@ public class eee {
 				}
 			}
 		} while (destroyedShips != 3);
-
+		System.out.println("You won!");
 	}
-
 }
