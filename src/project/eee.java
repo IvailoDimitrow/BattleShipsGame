@@ -19,9 +19,11 @@ public class eee {
 		int destroyedShips = 0;
 		int[][] ships = new int[3][2];
 		Random random = new Random();
+		
 		for (int ship = 0; ship < 3; ship++) {
 			ships[ship][0] = random.nextInt(5);
 			ships[ship][1] = random.nextInt(5);
+			
 			for (int last = 0; last < ship; last++) {
 				if ((ships[ship][0] == ships[last][0])
 						&& (ships[ship][1] == ships[last][1]))
